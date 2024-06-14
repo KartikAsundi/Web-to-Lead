@@ -11,20 +11,20 @@
 <body>
     <h1>Create Lead</h1>
     <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00D5g00000LKxHA" method="POST" onsubmit="submitHandler()">
-        <input type=hidden name='captcha_settings' value='{"keyname":"WebToLeadBootcamp","fallback":"true","orgId":"00D5g00000LKxHA","ts":""}'>
+    <input type=hidden name='captcha_settings' value='{"keyname":"WebToLeadBootcamp","fallback":"true","orgId":"00D5g00000LKxHA","ts":""}'>
     <input type=hidden name="oid" value="00D5g00000LKxHA"/>
     <input type=hidden name="retURL" value="https://kartikasundi.github.io/Web-to-Lead/thanks.html"/>
     <input type=hidden name="Lead_Date__c" class="outputDate"/>
     <label for="first_name">First Name</label>
-    <input  id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/><br>
+    <input id="first_name" maxlength="40" name="first_name" size="20" type="text" required="true"/><br>
     <label for="last_name">Last Name</label>
-    <input  id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/><br>
+    <input id="last_name" maxlength="80" name="last_name" size="20" type="text" required="true"/><br>
     <label for="email">Email</label>
-    <input  id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>
+    <input id="email" maxlength="80" name="email" size="20" type="text" required="true"/><br>
     <label for="Lead date">Lead Date</label>
     <input type="date" required="true" class="inputDate"/>
     <input type="submit" name="submit" class="submit" />
-    <div class="g-recaptcha" data-sitekey="6LfqzfgpAAAAAHEOGWPj6oYPYqociwWr8_HISBrP"></div><br>
+    <div class="g-recaptcha" data-callback="captchasuccess()" data-sitekey="6LfqzfgpAAAAAHEOGWPj6oYPYqociwWr8_HISBrP"></div><br>
     </form> 
 </body>
 </html>
