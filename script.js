@@ -24,5 +24,5 @@ function submitHandler(event){
 setInterval(timestamp, 500); 
 
 function captchasuccess(){
-    captchaChecked= true;
+    captchaChecked = true;
 }
